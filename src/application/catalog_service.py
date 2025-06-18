@@ -16,3 +16,6 @@ class CatalogService:
     
     def filter_service(self,filters):
         return self.service_repo.filter_service(filters)
+    
+    def get_service_details(self, service_id):
+        return self.get_service(service_id)

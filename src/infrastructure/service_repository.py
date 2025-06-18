@@ -8,8 +8,8 @@ class ServiceRepositary:
     def get_all_services(self):
         return list(self.db.services.find({}))
     
-    def get_services_by_id(self,service_id):
-        return self.db.services.find.one({"id":service_id})
+    def get_service_by_id(self, service_id):
+        return self.db.services.find_one({"id": service_id})
     
     def filter_service(self,filters):
         query ={}
